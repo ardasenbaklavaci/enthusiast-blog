@@ -5,6 +5,7 @@ title = "Enthusiast PC Blog"
 theme = "PaperMod"
 paginate = 10
 enableRobotsTXT = true
+removePathAccents = false
 
 [params]
   env = "production"
@@ -25,4 +26,9 @@ enableRobotsTXT = true
       unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "XML"]
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = -1
